@@ -1,0 +1,72 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blogBody {
+font-family: Arial;
+font-size:16px;
+background-color:#333 !important;
+padding:0px;
+margin:0px;
+min-width:1200px;
+line-height: inherit !important;
+}
+
+.blogBody h1 {
+font-family:Arial;
+font-size:36px;
+margin-top:0px !important;
+margin-bottom:0px !important;
+padding-top:10px;
+letter-spacing:0em;
+}
+
+.blogBody h2 {
+font-family:Arial;
+font-size:22px;
+color:#777;
+margin-top:0px;
+}
+
+.blogBody h3 {
+font-family:Arial;
+font-size:20px;
+color:#FFF;
+background-color:#418BCC;
+padding:5px;
+border-radius: 3px;
+}
+
+.blogBody h6 {
+font-size:14px;
+color: #FC923A;
+margin-top:-10px;
+margin-bottom:0px;
+}
+
+.blogBody code {
+font-family: monospace;
+}
+
+.blogBody .content {
+width:800px;
+padding-left:25px;
+padding-right:25px;
+padding-bottom:25px;
+margin-left:auto;
+margin-right:auto;
+background-color:#FFF;
+box-shadow: 0px 0px 10px #000;
+}
+
+.blogBody img {
+display:block;
+}
+
+.blogBody p {
+font-family:Georgia;
+font-size:12px;
+}
+
+
+

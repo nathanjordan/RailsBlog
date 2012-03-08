@@ -1,4 +1,6 @@
 RailsBlog::Application.routes.draw do
+  #get "home/index"
+
   resources :posttags
 
   resources :messages
@@ -8,6 +10,8 @@ RailsBlog::Application.routes.draw do
   resources :users
 
   resources :posts
+  
+  root :to => "Home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

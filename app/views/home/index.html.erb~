@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rails Blog</title>
+
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+		<meta http-equiv="Content-Language" content="en-us" />
+
+	</head>
+	<bodyclass="blogBody">
+		<div class="content">
+
+			<h1>RailsBlog 0.6.2!</h1>
+
+			<h2>Kim & Nate</h2>
+			<% @posts.each do |post| %>
+			<h3><%= post.title %></h3>
+			<h6><%= post.created_at.strftime("Printed on %m/%d/%Y at %I:%M%p") + " by " + User.find(post.poster).name %></h6>
+			<p><%= post.content =%></p>
+			<% end %>
+
+		</div>
+	</body>
+</html>
