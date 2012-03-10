@@ -5,7 +5,7 @@
 .blogBody {
 font-family: Arial;
 font-size:16px;
-background-color:#333 !important;
+background-color:#222 !important;
 padding:0px;
 margin:0px;
 min-width:1200px;
@@ -18,7 +18,7 @@ font-size:36px;
 margin-top:0px !important;
 margin-bottom:0px !important;
 padding-top:10px;
-letter-spacing:0em;
+letter-spacing:-0.08em;
 }
 
 .blogBody h2 {
@@ -26,22 +26,25 @@ font-family:Arial;
 font-size:22px;
 color:#777;
 margin-top:0px;
+letter-spacing:-0.06em;
 }
 
 .blogBody h3 {
 font-family:Arial;
 font-size:20px;
 color:#FFF;
-background-color:#418BCC;
-padding:5px;
+background-color:#3D82BF;
+padding:8px;
 border-radius: 3px;
+text-shadow: -1px -1px 0 #2B5D8A;
 }
 
 .blogBody h6 {
-font-size:14px;
-color: #FC923A;
+font-size:12px;
+color: #999;
 margin-top:-10px;
-margin-bottom:0px;
+margin-bottom:-5px;
+letter-spacing:-0.01em;
 }
 
 .blogBody code {
@@ -49,7 +52,7 @@ font-family: monospace;
 }
 
 .blogBody .content {
-width:800px;
+width:700px;
 padding-left:25px;
 padding-right:25px;
 padding-bottom:25px;
@@ -66,7 +69,16 @@ display:block;
 .blogBody p {
 font-family:Georgia;
 font-size:14px;
+text-indent:30px;
+margin-top:10px;
+margin-bottom:10px;
 }
 
-
-
+.blogBody .tag {
+display:inline;
+background-color:#FC923A;
+padding:3px;
+margin-right:5px;
+color:#fff;
+font-size:10px;
+}

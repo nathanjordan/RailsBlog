@@ -11,13 +11,19 @@
 	<body class="blogBody">
 		<div class="content">
 
-			<h1>RailsBlog 0.6.2!</h1>
+			<h1>The Nonsensical Blog</h1>
 
-			<h2>Kim & Nate</h2>
+			<h2>Serving the best in nonsense since 2012</h2>
 			<% @posts.each do |post| %>
 			<h3><%= post.title %></h3>
-			<h6><%= post.created_at.strftime("Printed on %m/%d/%Y at %I:%M%p") + " by " + User.find(post.poster).name %></h6>
+			<h6><%= post.created_at.strftime("Posted on %m/%d/%Y at %I:%M%p") + " by " + User.find(post.poster).name %></h6>
 			<p><%= post.content =%></p>
+			
+			<% Posttag.where(:postid => post.id).each do |posttag| %>
+			<div class="tag">#
+			<%= 	Tag.find( posttag.tagid ).tag =%>
+			</div> 
+			<%   end %>
 			<% end %>
 
 		</div>
