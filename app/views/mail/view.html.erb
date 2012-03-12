@@ -1,0 +1,8 @@
+<h1><%= @user.name %></h1>
+<hr/>
+<% @mail.each do |mail| %>
+<p>From: <%= User.find( mail.fromUser ).name %> </p>
+<p>Subject: <%= mail.subject %> </p>
+<p><%= mail.content %></p>
+<hr/>
+<% end %>

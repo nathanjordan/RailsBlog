@@ -1,5 +1,8 @@
 RailsBlog::Application.routes.draw do
+  
   #get "home/index"
+  
+  match 'mail/:id', :to => 'mail#view'
 
   resources :posttags
 

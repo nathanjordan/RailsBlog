@@ -16,12 +16,12 @@
 			<h2>Serving the best in nonsense since 2012</h2>
 			<% @posts.each do |post| %>
 			<h3><%= post.title %></h3>
-			<h6><%= post.created_at.strftime("Posted on %m/%d/%Y at %I:%M%p") + " by " + User.find(post.poster).name %></h6>
+			<h6><%= post.created_at.strftime("Posted on %m/%d/%Y at %I:%M%p") + " by " + post.user.name %></h6>
 			<p><%= post.content =%></p>
 			
-			<% Posttag.where(:postid => post.id).each do |posttag| %>
+			<% post.tags.each do |tag| %>
 			<div class="tag">#
-			<%= 	Tag.find( posttag.tagid ).tag =%>
+			<%= tag.tag =%>
 			</div> 
 			<%   end %>
 			<% end %>

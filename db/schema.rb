@@ -24,14 +24,14 @@ ActiveRecord::Schema.define(:version => 20120308090829) do
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "content"
-    t.integer  "poster"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "posttags", :force => true do |t|
-    t.integer  "tagid"
-    t.integer  "postid"
+    t.integer  "tag_id"
+    t.integer  "post_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
